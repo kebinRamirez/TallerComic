@@ -1,0 +1,5 @@
+<h1>Villanos <small>Marvel  y DC </small></h1>
+<hr>
+<div class="card-columns">
+    <app-villian-card (sujetoSelected)="verSujeto($event)" [sujetos]="foo" [index]="idx" *ngFor="let foo of sujeto; let idx = index;"></app-villian-card>
+</div>

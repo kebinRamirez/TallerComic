@@ -2,16 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { SujetoService,Sujeto } from '../../service/superpowerful.service';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-heroes',
-  templateUrl: './heroes.component.html',
-  styles: [
-  ]
+  selector: 'app-villains',
+  templateUrl: './villains.component.html',
+  styleUrls: ['./villains.component.css']
 })
-export class HeroesComponent implements OnInit {
-  
-  // hero:any[]=[];
+export class VillainsComponent implements OnInit {
+
+  // heros:any[]=[];
   sujeto:Sujeto[]=[];
   constructor( private _sujetoService: SujetoService, private _router: Router) { 
   }
@@ -24,6 +22,4 @@ export class HeroesComponent implements OnInit {
   verSujeto(id:number){
     this._router.navigate(['/detalles',id]);
   }
-
-
 }

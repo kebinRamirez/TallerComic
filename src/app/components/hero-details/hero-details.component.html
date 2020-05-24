@@ -1,20 +1,20 @@
-<h1>{{hero.nombre | uppercase }} <small>{{hero.aparicion | date: 'y'}}</small></h1>
+<h1>{{sujeto.nombre | uppercase }} <small>{{sujeto.aparicion | date: 'y'}}</small></h1>
 <hr>
 <div class="row">
     <div class="col-md-4">
-        <img [src]="hero.img" [alt]="hero.nombre">
+        <img [src]="sujeto.img" [alt]="sujeto.nombre">
         <br><br>
         <a [routerLink]="['/heroes']" class="btn btn-outline-primary"> Regresar</a>
     </div>
     <div class="col-md-6">
-        <h3>{{hero.nombre}}</h3>
+        <h3>{{sujeto.nombre}}</h3>
         <hr>
         <p>
-            {{hero.bio}}
+            {{sujeto.bio}}
         </p>
         <div>
-            <img *ngIf="hero.casa == 'DC' " src="../../../assets/img/dc.jfif" alt="">
-            <img *ngIf="hero.casa == 'Marvel' " src="../../../assets/img/marvel.png" alt="">
+            <img *ngIf="sujeto.casa == 'DC' " src="../../../assets/img/dc.jfif" alt="">
+            <img *ngIf="sujeto.casa == 'Marvel' " src="../../../assets/img/marvel.png" alt="">
         </div>
     </div>
 </div>

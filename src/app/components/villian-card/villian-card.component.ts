@@ -1,14 +1,14 @@
-import { Component, OnInit,Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit ,Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
-  selector: 'app-hero-card',
-  templateUrl: './hero-card.component.html',
-  styleUrls: ['./hero-card.component.css']
+  selector: 'app-villian-card',
+  templateUrl: './villian-card.component.html',
+  styleUrls: ['./villian-card.component.css']
 })
-export class HeroCardComponent implements OnInit {
+export class VillianCardComponent implements OnInit {
   @Input() sujetos:any= [];
   @Input() index :number;
-
+  
   @Output() sujetoSelected: EventEmitter<number>;
   constructor(  ) { 
     this.sujetoSelected = new EventEmitter();

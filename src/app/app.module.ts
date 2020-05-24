@@ -7,7 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroDetailsComponent } from './components/hero-details/hero-details.component';
-import { HeroSearchComponent } from './components/hero-search/hero-search.component';
+import { HeroSearchComponent } from './components/hero-search/sujeto-search.component';
 
 // RUTAS
 
@@ -16,8 +16,10 @@ import { APP_ROUTING } from './app.routes';
 
 // SERVICIOS
 
-import { HeroService } from './service/hero.service';
+import { SujetoService } from './service/superpowerful.service';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
+import { VillainsComponent } from './components/villains/villains.component';
+import { VillianCardComponent } from './components/villian-card/villian-card.component';
 
 
 
@@ -30,14 +32,16 @@ import { HeroCardComponent } from './components/hero-card/hero-card.component';
     AboutComponent,
     HeroDetailsComponent,
     HeroSearchComponent,
-    HeroCardComponent    
+    HeroCardComponent,
+    VillainsComponent,
+    VillianCardComponent    
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
   providers: [
-    HeroService
+    SujetoService
   ],
   bootstrap: [AppComponent]
 })
